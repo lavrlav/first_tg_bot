@@ -11,7 +11,7 @@ public class Main {
                     new TelegramBotsApi(DefaultBotSession.class);
             telegramBotsApi.registerBot(new Bot());
         } catch (TelegramApiException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
